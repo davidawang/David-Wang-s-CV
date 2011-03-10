@@ -1,0 +1,196 @@
+% resume.tex
+% vim:set ft=tex spell:
+
+\documentclass[10pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.75in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{tgpagella}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+	{\setlength{\leftmargin}{-0.5#1}}%
+	\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+	#1 &
+	#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+{\LARGE \textbf{David A. Wang}}
+
+3465 Sansom Street MB270\ \ \textbullet
+\ \ Philadelphia, PA 19104
+\\
+(949) 276-3804\ \ \textbullet
+\ \ david@dwang.org
+\end{center}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Objective}
+\begin{indentsection}{\parindent}
+\begin{description*}
+	\item Self-taught Django/python hacker with a special knack for UI, looking for an internship/startup opportunity.
+\end{description*}
+\end{indentsection}
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Experience}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item
+	\headerrow
+		{\textbf{MobLaundry}}
+		{\textbf{www.moblaundry.com}}
+	\\
+	\headerrow
+		{\emph{Co-founder and UI/Backend Developer}}
+		{\emph{January 2011}}
+	\begin{itemize*}
+		\item Mobile application to allow college students easily check their laundry status via web or text.
+		\item Crafted mobile frontend using HTML5 \& CSS3 and backend in Python, Django, and MySQL.
+		\item API written with Django-Piston and web service deployed using Fabric, \& Buildout, \& Pip.
+	\end{itemize*}
+
+
+	\item
+	\headerrow
+		{\textbf{Nanobio Interface Center - Nanoprobe Network}}
+		{\textbf{www.nanoprobenetwork.org, UPenn}}
+	\\
+	\headerrow
+		{\emph{Web Consultant, collaborated with Mr. Praetzel }}
+		{\emph{2009 - Present}}
+	\begin{itemize*}
+		\item Introduced caching to the old web firm to resolve a critical live forum crashing issue when more than 15 people/sec tried to visit the site.
+		\item Utilized a more user discussion driven approach to a new site redesign to increase traffic by 20\% and reduced site loading times from 5s to 1s.
+	\end{itemize*}
+
+
+
+	\item
+	\headerrow
+		{\textbf{College House of Computing}}
+		{\textbf{University of Pennsylvania, PA}}
+	\\
+	\headerrow
+		{\emph{Senior Information Technology Assistant (Sr. ITA)}}
+		{\emph{2009 -- Present}}
+	\begin{itemize*}
+		\item Regreased and disassembled entire laptops; removed rootkits, malware, and other computer issues. 
+		\item Wrote and held annual security themed hacking contests to raise awareness about computer security in Kings Court: (dwang.org/projects/kingscourt)
+	\end{itemize*}
+
+	\item
+	\headerrow
+		{\textbf{Engineering Student Activities Council}}
+		{\textbf{University of Pennsylvania, PA}}
+	\\
+	\headerrow
+		{\emph{Tech}}
+		{\emph{2010-Present}}
+	\begin{itemize*}
+		\item Built a dynamic jQuery plugin to facilitate selection of financial forms. Demo: (dwang.org/projects/esac)
+	\end{itemize*}
+
+
+	\item
+	\headerrow
+		{\textbf{"Modeling Physical Phenomena Using Computation"}}
+		{\textbf{UCLA, CA}}
+	\\
+	\headerrow
+		{\emph{Summer Researcher, mentored by UCLA researchers Scott Friedman and Shao Ching Huang }}
+		{\emph{Summer 2008}}
+	\begin{itemize*}
+		\item Implemented molecular dynamics simulation code in C and utilized Newton's 3rd law to optimize the simulation code and reduce the number of force calculations by half.
+		\item Utilized OpenMP to parallelize the forces calculations in the simulation code.
+		\item Created kinetic energy and velocity distribution plots to validate the dynamic equilibrium system state.
+	\end{itemize*}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Other Projects}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[TV-B-Gone Converter:] Built an translator to accept Pronto IR codes to allow the TV-B-Gone to control projectors.
+	\item[Aliso Niguel NHS:] Built a multi-user system to handle shift swapping, messaging system, and blog posts.
+	\item[Pinkoman:] 200+ line bash script for Macs that analyzes user behavior and prevents unintended activity.
+	\item[ANHS:] Security Advisor - uncovered numerous XSS holes, directory traversal attacks, SQL injections.
+\end{description*}
+\textit{More details can be found at: http://www.dwang.org/projects} 
+\end{indentsection}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Education}
+
+\begin{itemize}
+	\parskip=0.1em
+
+	\item 
+	\headerrow
+		{\textbf{University of Pennsylvania}}
+		{\textbf{Philadelphia, PA}}
+	
+	\headerrow
+		{\emph{School of Engineering and Applied Science, B.S.E Bioengineering}}
+		{\emph{2009 -- 2013}}
+	\begin{itemize*}
+		\item Minor: Computer Science and Nanotechnology
+	\end{itemize*}
+
+\end{itemize}
+
+
+\hrule
+\vspace{-0.4em}
+\subsection*{Core Technical Skills}
+
+\begin{indentsection}{\parindent}
+\hyphenpenalty=1000
+\begin{description*}
+	\item[Languages:]
+	C, Java, OCaml, JavaScript, PHP, MySQL, Python, Django, HTML5, CSS3, shell scripting
+	\item[Software:] Final Cut Pro, Adobe Photoshop, Adobe Illustrator
+\end{description*}
+\end{indentsection}
+
+\end{document}
