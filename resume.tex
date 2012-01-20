@@ -15,24 +15,24 @@
 % that need indentation to the level of all text in the document
 \newenvironment{indentsection}[1]%
 {\begin{list}{}%
-	{\setlength{\leftmargin}{#1}}%
-	\item[]%
+  {\setlength{\leftmargin}{#1}}%
+  \item[]%
 }
 {\end{list}}
 
 % opposite of above; bump a section back toward the left margin
 \newenvironment{unindentsection}[1]%
 {\begin{list}{}%
-	{\setlength{\leftmargin}{-0.5#1}}%
-	\item[]%
+  {\setlength{\leftmargin}{-0.5#1}}%
+  \item[]%
 }
 {\end{list}}
 
 % format two pieces of text, one left aligned and one right aligned
 \newcommand{\headerrow}[2]
 {\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
-	#1 &
-	#2 \\
+  #1 &
+  #2 \\
 \end{tabular*}}
 
 % make "C++" look pretty when used in text by touching up the plus signs
@@ -58,7 +58,7 @@
 \subsection*{Objective}
 \begin{indentsection}{\parindent}
 \begin{description*}
-	\item Self-taught python/javascript hacker with a special knack for UI, looking for an internship/startup opportunity.
+  \item Self-taught hacker, web generalist, looking for an internship/startup opportunity.
 \end{description*}
 \end{indentsection}
 
@@ -67,74 +67,75 @@
 \subsection*{Experience}
 
 \begin{itemize}
-	\parskip=0.1em
+  \parskip=0.1em
 
-	\item
-	\headerrow
-		{\textbf{Fridge (acquired by Google late summer 2011)}}
-		{\textbf{www.frid.ge}}
-	
-	\headerrow
-		{\emph{Engineering Intern, HackNY 2011 Fellow}}
-		{\emph{Summer 2011}}
-	\begin{itemize*}
-		\item Developed the Android Fridge mobile app.
-		\item Wrote a series of selenium tests and secured the Symfony PHP backend from several security holes. 
-	\end{itemize*}
+  \item
+  \headerrow
+    {\textbf{Fridge (acquired by Google late summer 2011)}}
+    {\textbf{www.frid.ge}}
+  
+  \headerrow
+    {\emph{Engineering Intern, HackNY 2011 Fellow}}
+    {\emph{Summer 2011}}
+  \begin{itemize*}
+    \item Developed the Android Fridge mobile app.
+    \item Wrote a series of selenium tests and secured the Symfony PHP backend from several security holes. 
+  \end{itemize*}
 
-	\item
-	\headerrow
-		{\textbf{MobLaundry}}
-		{\textbf{www.moblaundry.com}}
-	\\
-	\headerrow
-		{\emph{UI/Backend Developer}}
-		{\emph{January 2011}}
-	\begin{itemize*}
-		\item Mobile application to allow college students easily check their laundry status via web or text.
-		\item API written with Django-Piston and web service deployed using Fabric, \& Buildout, \& Pip.
-		\item Winner of best Twilio Application for PennApps 2011.
-	\end{itemize*}
+  \item
+  \headerrow
+    {\textbf{Scratch Table}}
+    {\textbf{www.youtube.com/watch?v=m33PqhdDl0M}}
+  \\
+  \headerrow
+    {\emph{Backend}}
+    {\emph{January 2012}}
+  \begin{itemize*}
+    \item Turns any surface (table, desk, wall) into a gesture touchpad.
+    \item Currently developing a standalone SDK for any mobile device or desktop app.
+    \item Won 1st place and audience choice award for PennApps 2012
+  \end{itemize*}
+
+  \item
+  \headerrow
+    {\textbf{MobLaundry}}
+    {\textbf{www.moblaundry.com}}
+  \\
+  \headerrow
+    {\emph{UI/Backend Developer}}
+    {\emph{January 2011}}
+  \begin{itemize*}
+    \item Mobile application to allow college students easily check their laundry status via web or text.
+    \item Winner of best Twilio Application for PennApps 2011.
+  \end{itemize*}
 
 
-	\item
-	\headerrow
-		{\textbf{Nanobio Interface Center - Nanoprobe Network}}
-		{\textbf{www.nanoprobenetwork.org, UPenn}}
-	\\
-	\headerrow
-		{\emph{Web Consultant, collaborated with Mr. Praetzel }}
-		{\emph{2009 - Present}}
-	\begin{itemize*}
-		\item Fixed a critical live forum crashing issue when more than 15 clients/sec accessed the site and redesigned/optimized the website to make it 5 times faster.
-	\end{itemize*}
+  \item
+  \headerrow
+    {\textbf{Nanobio Interface Center / College House of Computing}}
+    {\textbf{www.nanoprobenetwork.org, UPenn}}
+  \\
+  \headerrow
+    {\emph{Web Consultant, Sr. ITA }}
+    {\emph{2009 - Present}}
+  \begin{itemize*}
+    \item Fixed a critical live forum crashing issue when more than 15 clients/sec accessed the site and redesigned/optimized the website to make it 5 times faster.
+    \item Wrote and held annual security themed hacking contests to raise awareness about computer security.
+  \end{itemize*}
 
-	\item
-	\headerrow
-		{\textbf{College House of Computing / Engineering Student Activities Council}}
-		{\textbf{University of Pennsylvania, PA}}
-	\\
-	\headerrow
-		{\emph{Senior Information Technology Assistant (Sr. ITA) / Tech}}
-		{\emph{2009 -- 2011}}
-	\begin{itemize*}
-		\item Wrote and held annual security themed hacking contests to raise awareness about computer security.
-		\item Built a dynamic jQuery plugin to facilitate selection of financial forms. Demo: (dwang.org/projects/esac)	
-	\end{itemize*}
-
-	\item
-	\headerrow
-		{\textbf{"Modeling Physical Phenomena Using Computation"}}
-		{\textbf{UCLA, CA}}
-	\\
-	\headerrow
-		{\emph{Summer Researcher, mentored by UCLA researchers Scott Friedman and Shao Ching Huang }}
-		{\emph{Summer 2008}}
-	\begin{itemize*}
-		\item Implemented molecular dynamics simulation code in C and utilized Newton's 3rd law to optimize the simulation code and reduce the number of force calculations by half.
-		\item Utilized OpenMP to parallelize the forces calculations in the simulation code.
-		\item Created kinetic energy and velocity distribution plots to validate the dynamic equilibrium system state.
-	\end{itemize*}
+  \item
+  \headerrow
+    {\textbf{"Modeling Physical Phenomena Using Computation"}}
+    {\textbf{UCLA, CA}}
+  \\
+  \headerrow
+    {\emph{Summer Researcher, mentored by UCLA researchers Scott Friedman and Shao Ching Huang }}
+    {\emph{Summer 2008}}
+  \begin{itemize*}
+    \item Implemented molecular dynamics simulation code in C and utilized Newton's 3rd law to optimize the simulation code and reduce the number of force calculations by half.
+    \item Utilized OpenMP to parallelize the forces calculations in the simulation code.
+    \item Created kinetic energy and velocity distribution plots to validate the dynamic equilibrium system state.
+  \end{itemize*}
 
 \end{itemize}
 
@@ -146,12 +147,12 @@
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
 \begin{description*}
-	\item[TV-B-Gone Converter:] Built an translator to accept Pronto IR codes to allow the TV-B-Gone to control projectors.
-	\item[Aliso Niguel NHS:] Built a multi-user system to handle shift swapping, messaging system, and blog posts.
-	\item[Pinkoman:] 200+ line bash script for Macs that analyzes user behavior and prevents unintended activity.
-	\item[ANHS:] Security Advisor - uncovered numerous XSS holes, directory traversal attacks, SQL injections.
+  \item[TV-B-Gone Converter:] Built an translator to accept Pronto IR codes to allow the TV-B-Gone to control projectors.
+  \item[KaraokeJS:] Won Most Entertaining App Award, PennApps 2011 Spring: youtube.com/watch?v=ar8go7XKmwQ
+  \item[Pinkoman:] 200+ line bash script for Macs that analyzes user behavior and prevents unintended activity.
+  \item[ANHS:] Security Advisor - uncovered numerous XSS holes, directory traversal attacks, SQL injections.
 \end{description*}
-\textit{More details can be found at: http://www.dwang.org/projects} 
+\textit{More details can be found at: http://www.github.com/davidawang} 
 \end{indentsection}
 
 
@@ -160,19 +161,19 @@
 \subsection*{Education}
 
 \begin{itemize}
-	\parskip=0.1em
+  \parskip=0.1em
 
-	\item 
-	\headerrow
-		{\textbf{University of Pennsylvania}}
-		{\textbf{Philadelphia, PA}}
-	
-	\headerrow
-		{\emph{School of Engineering and Applied Science, B.S.E Bioengineering}}
-		{\emph{2009 -- 2013}}
-	\begin{itemize*}
-		\item Minor: Computer Science and Nanotechnology
-	\end{itemize*}
+  \item 
+  \headerrow
+    {\textbf{University of Pennsylvania}}
+    {\textbf{Philadelphia, PA}}
+  
+  \headerrow
+    {\emph{School of Engineering and Applied Science, B.A.S Bioengineering}}
+    {\emph{2009 -- 2013}}
+  \begin{itemize*}
+    \item Minor: Computer Science
+  \end{itemize*}
 
 \end{itemize}
 
@@ -184,9 +185,10 @@
 \begin{indentsection}{\parindent}
 \hyphenpenalty=1000
 \begin{description*}
-	\item[Languages:]
-	C, Java, OCaml, Objective C, JavaScript, PHP, MySQL, Python, Django, HTML5, CSS3, bash
+  \item[Languages/Platforms:]
+  JavaScript, Node.js, PHP, MySQL, Python/Django, Java, C, HTML5/CSS3, iPhone/Android, Redis, MongoDB, a litle bit of Riak
 \end{description*}
 \end{indentsection}
 
 \end{document}
+​
